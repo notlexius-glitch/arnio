@@ -43,7 +43,7 @@ jobs:
         run: python tests/smoke_wheel_install.py --wheelhouse wheelhouse
 
       - name: Upload wheel as artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: manylinux-wheel
           path: wheelhouse/*.whl
